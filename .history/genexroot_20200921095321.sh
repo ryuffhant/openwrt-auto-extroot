@@ -16,12 +16,12 @@ REL=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
 
 # Store data to $ARCH variable
 ARCH=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <target> " 8 50 \
+--inputbox "Enter <arch> " 8 50 \
 2>&1 1>&3)
 
 # Store data to $VAR variable
 VAR=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <subtarget> " 8 50 \
+--inputbox "Enter <target> " 8 50 \
 2>&1 1>&3)
 
 # Store data to $DEV variable
