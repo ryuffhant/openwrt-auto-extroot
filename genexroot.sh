@@ -33,7 +33,9 @@ DEV=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
 exec 3>&-
 
 dialog --backtitle "OpenWRT/LEDE Exroot Builder" \
---yesno "Are you sure want to continue?" 8 50
+--yesno "Are you sure want to continue?\n\n
+Your build\n
+${NAME}-${REL}-${ARCH}-${VAR}-${DEV}" 8 50
 response=$?
 case $response in
 	0)
@@ -91,11 +93,11 @@ case $response in
 						mkdir -p ${IMGDONE}
 					fi
 
-		rm -rf $IMGTEMPDIR
-		cp -r image-extras/common/ $IMGTEMPDIR
+		rm -rf ${IMGTEMPDIR}
+		cp -r image-extras/common/ ${IMGTEMPDIR}
 		PER_PLATFORM_IMAGE_EXTRAS=image-extras/${TARGET_DEVICE}/
-					if [ -e $PER_PLATFORM_IMAGE_EXTRAS ]; then
-						rsync -pr $PER_PLATFORM_IMAGE_EXTRAS $IMGTEMPDIR/
+					if [ -e ${PER_PLATFORM_IMAGE_EXTRAS} ]; then
+						rsync -pr ${PER_PLATFORM_IMAGE_EXTRAS} ${IMGTEMPDIR}/
 					fi
 
 					if [ ! -e ${IMGBUILDER_DIR} ]; then
