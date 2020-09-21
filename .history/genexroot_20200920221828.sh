@@ -6,27 +6,27 @@ exec 3>&1
 
 # Store data to $NAME variable
 NAME=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <name> " 8 50 \
+--inputbox "Enter name " 8 50 \
 2>&1 1>&3)
 
 # Store data to $REL variable
 REL=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <version> " 8 50 \
+--inputbox "Enter version " 8 50 \
 2>&1 1>&3)
 
 # Store data to $ARCH variable
 ARCH=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <arch> " 8 50 \
+--inputbox "Enter architecture " 8 50 \
 2>&1 1>&3)
 
 # Store data to $VAR variable
 VAR=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <target> " 8 50 \
+--inputbox "Enter target " 8 50 \
 2>&1 1>&3)
 
 # Store data to $DEV variable
 DEV=$(dialog --backtitle "OpenWRT/LEDE Exroot Generator" \
---inputbox "Enter <device> " 8 50 \
+--inputbox "Enter device " 8 50 \
 2>&1 1>&3)
 
 # close fd
