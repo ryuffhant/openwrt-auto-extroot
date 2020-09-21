@@ -77,8 +77,11 @@ In short:
   to strip more packages.
   `-ca-bundle -ip6tables -kmod-ath9k -kmod-usb-chipidea2 -kmod-usb-ledtrig-usbport -libustream-wolfssl
    -odhcp6c -odhcpd-ipv6only -ppp -ppp-mod-pppoe -wpad-basic-wolfssl`
-  then you add this packages to support `exroot`
+  then you add this packages to support **exroot**
    `block-mount kmod-usb-storage kmod-usb-ohci kmod-usb-uhci kmod-usb-core`
+
+* Unfortunately this generator doesn't support for **snapshot** image generator build.
+  You may consider to collaborate for making this better.
   
 
 ## Help! The build has finished but there's no firmware file!
