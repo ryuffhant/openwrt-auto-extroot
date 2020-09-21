@@ -71,7 +71,7 @@ case $response in
 
 		# the absolute minimum for extroot to work at all (i.e. when the disk is already set up, for example by hand).
 		# this list may be smaller and/or different for your router, but it works with my ar71xx.
-		PREINSTALLED_PACKAGES="block-mount kmod-fs-ext4 kmod-usb-storage kmod-usb-ohci kmod-usb-uhci nano"
+		PREINSTALLED_PACKAGES="block-mount kmod-fs-ext4 kmod-usb-storage kmod-usb-ohci kmod-usb-uhci"
 
 		# Feel free to use IPv6 installed by default or remove it.
 		PREINSTALLED_PACKAGES+=" -ppp -ppp-mod-pppoe -ip6tables -odhcp6c -kmod-ipv6 -kmod-ip6tables -odhcpd-ipv6only"
