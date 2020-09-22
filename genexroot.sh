@@ -62,8 +62,7 @@ case $response in
 		TARGET_DEVICE=${DEV}
 		RELEASE=${REL}
 		TARGET_NAME=${NAME}
-		BUILD=`dirname "$0"`"/build/"
-		BUILD=`absolutize $BUILD`
+		BUILD="build"
 		IMGBUILDER_NAME="${TARGET_NAME}-imagebuilder-${RELEASE}-${TARGET_ARCHITECTURE}-${TARGET_VARIANT}.Linux-x86_64"
 		IMGBUILDER_DIR="${BUILD}/${IMGBUILDER_NAME}"
 		IMGBUILDER_ARCHIVE="${IMGBUILDER_NAME}.tar.xz"
